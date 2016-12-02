@@ -1,0 +1,10 @@
+
+.navi {
+  display: inline-block
+  height: 80px;
+  width: 100%;
+}
+.navi__logo {
+  display: :inline-block
+  height: 80px;
+}
