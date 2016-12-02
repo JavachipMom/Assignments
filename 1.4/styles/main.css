@@ -1,15 +1,15 @@
-
+* {
+  box-sizing: border-box;
+}
 body {
   background: DarkGrey;
   margin: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .jason__dog {
+border-radius: 50px;
   width: 50px;
+  border
 }
 
 .top__navi {
@@ -29,6 +29,7 @@ body {
 }
 
 .top__navi__srch {
+  border-right-style: none;
   display: inline-block;
   margin-top: 15px;
   margin-right: 0;
@@ -38,19 +39,23 @@ body {
 }
 
 .top__navi__submit {
-background-color: LightGrey;
+  background-color: LightGrey;
+
 }
 .top__navi__upload {
-  background-color: GhostWhite;
-  border-style: solid;
+  background-color: rgb(248,248,248);
   border-color: DarkGrey;
+  border-style: solid;
+  border-width: 2px;
   border-radius: 8px;
+  color: Black;
   margin: 5px;
-  padding: 5px;
+  padding: 8px;
+  text-decoration: none;
 }
 /* 1,060 x 50 I don't think these measurements are right */
 .top__srch__bar {
   height: 25px;
-
+  margin-right: -5px;
   width: 465px;
 }
