@@ -63,3 +63,6 @@ body {
   margin-right: -5px;
   width: 465px;
 }
+header {
+  align-self: center;
+}
