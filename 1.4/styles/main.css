@@ -2,19 +2,21 @@
   box-sizing: border-box;
 }
 body {
-  background: DarkGrey;
+  background: rgb(248,248,248);
   margin: 0;
 }
 
 .jason__dog {
-border-radius: 50px;
-  width: 50px;
+  border-radius: 50px;
+  margin-right: 15px;
+  margin-top: 15px;
+  width: 25px;
   border
 }
 
 .top__navi {
-  background: White;
-  height: 80px;
+  background: rgb(255,255,255);
+  height: 60px;
 }
 
 .top__navi__links {
@@ -39,19 +41,21 @@ border-radius: 50px;
 }
 
 .top__navi__submit {
-  background-color: LightGrey;
-
+  background-color: rgb(248,248,248);
+  height: 28px;
 }
 .top__navi__upload {
   background-color: rgb(248,248,248);
-  border-color: DarkGrey;
+  border-color: rgb(206,206,206);
   border-style: solid;
   border-width: 2px;
-  border-radius: 8px;
-  color: Black;
-  margin: 5px;
-  padding: 8px;
+  border-radius: 5px;
+  color: rgb(0,0,0);
+  height: 5px;
+  margin: 30px;
+  padding: 5px;
   text-decoration: none;
+
 }
 /* 1,060 x 50 I don't think these measurements are right */
 .top__srch__bar {
