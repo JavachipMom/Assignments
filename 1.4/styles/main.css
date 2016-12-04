@@ -2,16 +2,68 @@
   box-sizing: border-box;
 }
 body {
-  background: rgb(248,248,248);
+  background: rgb(241,241,241);
   margin: 0;
 }
 
+.boxes {
+  width: 350px;
+  height: 90px;
+}
+
+.comments {
+  display: inline-block;
+  vertical-align: bottom;
+}
+/* 700 x 750*/
+.content__body {
+  display: inline-block;
+  vertical-align: top;
+  width: 650px;
+  height: 750px;
+  margin-right: 8px;
+  margin-left: 142px;
+}
+.content__buttons {
+
+}
+
+.images {
+  width: 150px;
+  height: 82px;
+}
 .jason__dog {
   border-radius: 50px;
   margin-right: 15px;
   margin-top: 15px;
   width: 25px;
   border
+}
+
+.kittie {
+  width: 40px;
+  height: 40px;
+
+}
+.main__content {
+  display: inline-block;
+  width: 1440px;
+}
+
+.rabbitHole__video {
+}
+.subscribe {
+
+}
+.textContent {
+  background-color: rgb(255,255,255);
+  display: -webkit-inline-box;
+  height: 135px;
+  width: 640px;
+}
+.title {
+  height: 35px;
+  margin-bottom: 5px;
 }
 
 .top__navi {
@@ -45,6 +97,7 @@ body {
   height: 28px;
 }
 .top__navi__upload {
+  align-items: center;
   background-color: rgb(248,248,248);
   border-color: rgb(206,206,206);
   border-style: solid;
@@ -52,7 +105,8 @@ body {
   border-radius: 5px;
   color: rgb(0,0,0);
   height: 5px;
-  margin: 30px;
+  margin-right: 30px;
+  /* I tried to change the margin-bottom to like 50px to see if it will align the Upload with the pic -- wait, I think I may have answered my question*/
   padding: 5px;
   text-decoration: none;
 
@@ -63,6 +117,10 @@ body {
   margin-right: -5px;
   width: 465px;
 }
-header {
-  align-self: center;
+/* 375 x 500 */
+.video__suggestions {
+  background-color: rgb(255,255,255);
+  display: inline-block;
+  height: 500px;
+  width: 375px;
 }
