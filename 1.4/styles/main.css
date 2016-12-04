@@ -13,8 +13,12 @@ body {
 }
 
 .comments {
+  background-color: rgb(255,255,255);
   display: inline-block;
   vertical-align: bottom;
+  margin-top: 5px;
+  width: 640px;
+  height: initial;
 }
 /* 700 x 750*/
 .content__body {
@@ -25,6 +29,13 @@ body {
   margin-left: 142px;
   margin-right: 8px;
   margin-top: 7px;
+}
+.description {
+  background-color: rgb(255,255,255);
+  border-top-color: rgb(221,221,221);
+  border-top-width: thin;
+  width: 640px;
+
 }
 /* 270 x 55 */
 .google__ad {
@@ -40,6 +51,7 @@ body {
 }
 .jason__dog {
   border-radius: 50px;
+  margin-bottom: -14px;
   margin-right: 15px;
   margin-top: 15px;
   width: 25px;
@@ -58,9 +70,18 @@ body {
 
 .rabbitHole__video {
 }
-.subscribe {
 
+.show__more {
+  display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    border-left-style: none;
+    border-bottom-style: none;
+    border-right-style: none;
+    border-top-style: inset;
+    background-color: rgb(255,255,255);
 }
+
 .textContent {
   background-color: rgb(255,255,255);
   display: -webkit-inline-box;
@@ -74,7 +95,7 @@ body {
 
 .top__navi {
   background: rgb(255,255,255);
-  height: 60px;
+  height: 40px;
 }
 
 .top__navi__links {
@@ -85,16 +106,19 @@ body {
 
 /* 140 x 90*/
 .top__navi__logo {
-  height: 60px;
+  height: 54px;
+  width: 100px;
+  margin-left: 40px;
+  padding-bottom: 4px;
 }
 
 .top__navi__srch {
   border-right-style: none;
   display: inline-block;
-  margin-top: 15px;
+  margin-top: 7px;
   margin-right: 0;
   margin-bottom: 15px;
-  margin-left: 0;
+  margin-left: 55px;
   vertical-align: top;
 }
 
@@ -127,7 +151,7 @@ body {
 .video__suggestions {
   background-color: rgb(255,255,255);
   display: inline-block;
-  height: 750px;
+  height: 730px;
   width: 375px;
   margin-top: 7px;
 }
