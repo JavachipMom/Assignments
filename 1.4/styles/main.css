@@ -19,6 +19,11 @@ body {
   width: 350px;
 }
 
+.Bsubscribe{
+  background-color: rgb(227,37,26);
+  color: rgb(255,255,255);
+}
+
 .comments {
   background-color: rgb(255,255,255);
   display: inline-block;
@@ -102,6 +107,11 @@ body {
 .option2 {
   display: inline-block;
   float: right;
+}
+
+.page__buttons {
+  background-color: rgb(255,255,255);
+  border: none;
 }
 
 .show__more {
