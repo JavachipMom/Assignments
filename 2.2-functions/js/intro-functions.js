@@ -17,7 +17,7 @@ function max(a, b){
   } else if(b > a){
       return b;
   } else {
-      return 0;
+      return b;
   }
 }
 
@@ -36,8 +36,25 @@ console.assert(isNaN(max("aaa","bbb")));
  */
 
 function maxOfThree(a, b, c){
-    // YOUR CODE HERE
+  if(a > b) {
+    if(a > c){
+      return a;
+    }else{
+      if(b > c){
+        return b;
+      }else{
+        return c;
+      }
+    }
+  }else{
+    if(b > c){
+      return b;
+    }else{
+      return c;
+    }
+  }
 }
+
 
 console.assert(maxOfThree(1,3,2) === 3);
 console.assert(maxOfThree(0,3,-1) === 3);
