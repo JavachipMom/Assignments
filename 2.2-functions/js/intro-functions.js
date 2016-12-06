@@ -12,7 +12,13 @@ var myObject = {
  */
 
 function max(a, b){
-    // YOUR CODE HERE
+  if (a > b) {
+    return a;
+  } else if(b > a){
+      return b;
+  } else {
+      return 0;
+  }
 }
 
 console.assert(max(1,3) === 3);
