@@ -69,6 +69,11 @@ body {
   width: 150px;
 }
 
+.image__link {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .jason__dog {
   border-radius: 50px;
   margin-bottom: -14px;
@@ -83,6 +88,14 @@ body {
   margin-bottom: 40px;
   margin-left: 11px;
   width: 40px;
+}
+
+.like__dislike {
+  float: right;
+}
+
+.links {
+  display: inline-block;
 }
 
 .link__text {
@@ -118,6 +131,10 @@ body {
   border: none;
 }
 
+.play__button {
+  color: rgb(255,255,255)
+}
+
 .show__more {
   display: inline-block;
   background-color: rgb(255,255,255);
@@ -133,9 +150,16 @@ body {
 
 .subscribe {
   display: inline-block;
-  height: 64px;
+  height: 46px;
   margin-left: 4px;
   width: 146px;
+  vertical-align: top;
+}
+
+.subscribers {
+  float: right;
+  margin-right: 40px;
+  margin-top: 0;
 }
 
 .textContent {
@@ -206,6 +230,10 @@ body {
   width: 465px;
 }
 
+.total__views {
+  float: right;
+}
+
 .upNext {
   display: inline-block;
   font-size: 0.8625em;
@@ -214,7 +242,18 @@ body {
 .username {
   display: inline-block;
   margin-bottom: 4px;
+  margin-top: 0;
   width: 100px;
+}
+
+.user__info {
+  height: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.user__name {
+  margin: 0;
 }
 /* 375 x 500 */
 .video__suggestions {
@@ -223,4 +262,8 @@ body {
   height: 730px;
   width: 375px;
   margin-top: 7px;
+}
+
+.views {
+  margin: 0;
 }

@@ -28,20 +28,22 @@
     <!-- Started my main body of content here -->
     <main class="main__content">
       <header class="content__body">
-        <video class="rabbitHole__video" src="assets/big_buck_bunny.mp4" autoplay poster="It'saMatrixOfTheRabbitHole">
-        </video>
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/zQ1_IbFFbzA?autoplay=1" frameborder="0" allowfullscreen></iframe>
         <!-- Here I am starting my second container -->
         <section class="textContent">
         <h1 class="title">The Matrix (1999) - The Pill Scene</h1>
+        <div class="user__info">
+          <p class="total__views">364,420 views</p>
           <img class="kittie" src="assets/user.jpg" alt="Kittie with a hat">
             <div class="subscribe">
              <p class="username">Freestyler 365</p>
              <button class="Bsubscribe" type="button" name="button">
-               <i class="fa fa-play" style="color:white">
+               <i class="fa fa-play play__button">
                </i> Subscribe
              </button>
-             <p>604</p>
+             <p class="subscribers">604</p>
            </div>
+        </div>
            <div class="user__action">
             <button class="page__buttons" type="button" name="button">
               <i class="fa fa-plus" style="font-size:20px">
@@ -55,14 +57,15 @@
               <i class="fa fa-ellipsis-h">
               </i> More
             </button>
-          </div>
-            <p>364,420 views</p>
+          <div class="like__dislike">
             <button type="button" name="button">
               <img src="#" alt="#">1,698
             </button>
             <button type="button" name="button">
               <img src="#" alt="#">
+          </div>
             </button>
+          </div>
           <!-- Ended my buttons for the second container -->
         </section>
           <section class="description">
@@ -82,39 +85,48 @@
             <p class="option2">Autoplay <img src="#" alt="#"></p>
         </div>
           <article class="boxes">
-            <a href="#">
+            <a class="links" href="#">
               <!-- 150 x 82 -->
               <img class="images" src="assets/suggestion-1.jpg" alt="Neo Reborn">
             </a>
-            <a href="#">
-              <h4 class="link__text">The.Matrix-1999 (welcome to the real world)</h4>
+            <a class="image__link" href="#">
+              <h4 class="link__text">The.Matrix-1999 (welcome to the real world)
+              </h4>
+              <p class="user__name">dimopan</p>
+              <p class="views">463,371 views</p>
             </a>
-            <p>dimopan</p>
-            <p>463,371 views</p>
           </article>
           <article class="boxes">
-            <a href="#">
+            <a class="image__link" href="#">
               <img class="images" src="assets/suggestion-2.jpg" alt="Neo's mind is blown">
             </a>
-            <a href="#"><h4 class="link__text">"The Matrix" (1999) --'Construct' Scenes</h4></a>
-            <p>Galatic Archive</p>
-            <p>708,357 views</p>
+            <a class="links" href="#">
+              <h4 class="link__text">"The Matrix" (1999) --'Construct' Scenes</h4>
+              <p class="user__name">Galatic Archive</p>
+              <p class="views">708,357 views</p>
+            </a>
           </article>
           <article class="boxes">
-            <a href="#">
+            <a class="image__link" href="#">
               <img class="images" src="assets/suggestion-3.jpg" alt="Morpheus and his gap explain The Matrix">
             </a>
-            <a href="#"><h4 class="link__text">Morpheus explains what is the matrix</h4></a>
-            <p>Jason Newsted</p>
-            <p>584,308 views</p>
+            <a class="links" href="#">
+              <h4 class="link__text">Morpheus explains what is the matrix
+              </h4>
+              <p class="user__name">Jason Newsted</p>
+              <p class="views">584,308 views</p>
+            </a>
           </article>
           <article class="boxes">
-            <a href="#">
+            <a class="image__link" href="#">
               <img class="images" src="assets/suggestion-4.jpg" alt="Neo gives himself the finger">
             </a>
-            <a href="#"><h4 class="link__text">Film Theory: Neo ISN'T The One in The Matrix Trilogy</h4></a>
-            <p>The Film Theorists</p>
-            <p>4,992,777 views</p>
+            <a class="links" href="#">
+              <h4 class="link__text">Film Theory: Neo ISN'T The One in The Matrix Trilogy
+              </h4>
+              <p class="user__name">The Film Theorists</p>
+              <p class="views">4,992,777 views</p>
+            </a>
           </article>
           <!-- Article 350 x 90 -->
           <!-- The end of my html and now I will go back and input my CSS -->
