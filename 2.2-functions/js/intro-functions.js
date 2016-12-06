@@ -63,7 +63,14 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  */
 
 function isVowel(char){
-    // YOUR CODE HERE
+  if(char === 'A' || char === 'a'){
+    return true;
+  }
+  if(char === 'E' || char === 'e'){
+    return true;
+  }else{
+    return false;
+  }
 }
 
 console.assert(isVowel(0) === false);
@@ -85,7 +92,7 @@ console.assert(isVowel("E") === true);
  */
 
 function rovarspraket(text){
-    // YOUR CODE HERE
+  
 }
 
 console.assert(rovarspraket("a") === "a")
