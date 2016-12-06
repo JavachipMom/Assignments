@@ -168,6 +168,19 @@ body {
   padding-top: 1px;
   width: 640px;
 }
+
+.thumbs{
+  color: rgb(128,128,128);
+}
+
+.thumbs1 {
+  color: rgb(128,128,128);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  -ms-transform:r otateY(180deg);
+}
+
 .title {
   font-size: 18px;
   font-weight: 500;
