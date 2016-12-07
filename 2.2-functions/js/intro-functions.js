@@ -71,6 +71,7 @@ function isVowel(char){
   }else{
     return false;
   }
+  //*I wrote just else return false because I didn't see any other vowels???? /
 }
 
 console.assert(isVowel(0) === false);
@@ -92,7 +93,17 @@ console.assert(isVowel("E") === true);
  */
 
 function rovarspraket(text){
-  
+  textAsString = text.toString();
+
+  var textArray = textAsString.split("");
+  for(var i = 0; i < textArray.length; i++){
+    var currentLetter = textArray[i];
+    if(!isVowel(currentLetter)){
+      var doubleText = currentLetter + "o" + currentLetter;
+      textArray.splice(i, 1, doubleText)
+    }
+  }
+  return textArray.join("");
 }
 
 console.assert(rovarspraket("a") === "a")
