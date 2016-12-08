@@ -35,12 +35,43 @@ console.assert(nicer("dad get the heck in here and bring me a darn sandwich.") =
 console.assert(nicer("here son, your crappy sandwich is on the dang plate.") === "here son, your sandwich is on the plate.")
 
 // PART 2: write a function called capitalizeAll(). It should take as input a sentence and capitalize the first letter of every word in the sentence.
+//
+function capitalizeAll(sentence){
+  var sentenceArray = sentence.split(" ");
+  // We want to capitalize the first letter of 'every'
+  for (var i = 0; i < sentenceArray.length; i++) {
+    var wordArray = sentenceArray[i].split("");
 
+    var capitalizeLetter = wordArray[0].toUpperCase();
+    wordArray[0] = capitalizeLetter;
+    var joindedWord = wordArray.join("");
+
+    sentenceArray[i] = joindedWord;
+  }
+  var joindedSentence = sentenceArray.join(" ")
+  return joindedSentence;
+}
 console.assert(capitalizeAll('every day is like sunday.') === 'Every Day Is Like Sunday.')
 
 // PART 3: write a function called properSentences(). It should take as input a string and capitalize the first letter of every sentence in that string. (For our purposes, all sentences will end with periods. Write one that works with ? and ! and receive a gratifying high five, right on the hand!)
 
 var paragraph = 'it was a fine morning. the wine was good. light slanted in through the cafe window.'
+// First write function properSentences
+function properSentences(string){
+  var sentenceArray = string.split(". ");
+  for(i = 0; i < sentenceArray.length; i++){
+    // This one if statement is a little confusing with the -1, I don't understand it very much. Is this saying your taking away 1 index from the array??
+    if(i !== sentenceArray.length - 1){
+      sentenceArray[i] = sentenceArray[i].charAt(0).toUpperCase() + sentenceArray[i].slice[0] + ". ";
+    } else {
+      sentenceArray[i] = sentenceArray[i].charAt(0).toUpperCase() + sentenceArray[i].slice[0];
+    }
+    console.log(sentenceArray);
+  }
+  sentenceArray = sentenceArray.join("");
+  return sentenceArray;
+}
+// Take our string and turn into array.
 
 console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
 
