@@ -9,6 +9,7 @@
 .display {
   background-color: rgb(103,177,90);
   border-width: 1px;
+  color: rgb(255,255,255);
   height: 102%;
   width: 98%;
 }
@@ -20,7 +21,7 @@
 }
 
 .main__table {
-  background-color: rgb(138,195,127);
+  background-color: rgb(103,177,90);
   border-collapse: collapse;
   height: 100%;
   width: 100%;
