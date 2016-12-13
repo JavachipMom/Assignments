@@ -1,0 +1,31 @@
+.PawPatrolSection {
+  background-blend-mode: overlay;
+  background-color: rgb(207,207,207);
+  background-image: url("Paw__Patrol.png");
+  background-repeat: repeat;
+  border-radius: 25px;
+  border-style: double;
+  display: inline-block;
+  vertical-align: top;
+  height: 50%;
+  width: 50%;
+}
+
+.poster {
+  display: block;
+  margin: auto;
+}
+
+.seasonTotal {
+  color: rgb(252,99,93)
+}
+
+.textPlot {
+  font-style: italic;
+}
+
+.title {
+  font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
+}

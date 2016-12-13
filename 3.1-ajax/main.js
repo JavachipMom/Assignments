@@ -11,18 +11,18 @@ document.addEventListener("DOMContentLoaded", function(){
   var JSONData = JSON.parse(xhrData);
   console.log(JSONData);
   // I am creating my Title for my page
-  var MovieTitleHTML = "<h2>";
+  var MovieTitleHTML = "<h2 class='title'>";
   MovieTitleHTML += JSONData.Title;
   MovieTitleHTML += "</h2>";
 movieSelectionElement.innerHTML += MovieTitleHTML;
 // I have my poster image here
-  var MoviePosterHTML = "<img src='";
+  var MoviePosterHTML = "<img class='poster' src='";
   MoviePosterHTML += JSONData.Poster;
   MoviePosterHTML += "'>";
 movieSelectionElement.innerHTML += MoviePosterHTML;
   var MovieActorsHTML = "<h3>";
   MovieActorsHTML += "Actors: " + JSONData.Actors;
-  MovieActorsHTML += "</h3>"
+  MovieActorsHTML += "</h3>";
 movieSelectionElement.innerHTML += MovieActorsHTML;
   var MovieRatedHTML = "<h3>";
   MovieRatedHTML += "Rated: " + JSONData.Rated;
@@ -36,11 +36,11 @@ movieSelectionElement.innerHTML += MovieGenreHTML;
   MovieYearHTML += "Year Created: " + JSONData.Year;
   MovieYearHTML += "</h3>";
 movieSelectionElement.innerHTML += MovieYearHTML;
-  var MoviePlotHTML = "<h3>";
+  var MoviePlotHTML = "<h3 class='textPlot'>";
   MoviePlotHTML += "Plot: " + JSONData.Plot;
   MoviePlotHTML += "</h3>";
 movieSelectionElement.innerHTML += MoviePlotHTML;
-  var MovietotalSeasonsHTML = "<h4>";
+  var MovietotalSeasonsHTML = "<h4 class='seasonTotal'>";
   MovietotalSeasonsHTML += "Total Seasons: " + JSONData.totalSeasons;
   MovietotalSeasonsHTML += "</h4>";
 movieSelectionElement.innerHTML += MovietotalSeasonsHTML;
