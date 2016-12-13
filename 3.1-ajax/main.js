@@ -20,6 +20,31 @@ movieSelectionElement.innerHTML += MovieTitleHTML;
   MoviePosterHTML += JSONData.Poster;
   MoviePosterHTML += "'>";
 movieSelectionElement.innerHTML += MoviePosterHTML;
+  var MovieActorsHTML = "<h3>";
+  MovieActorsHTML += "Actors: " + JSONData.Actors;
+  MovieActorsHTML += "</h3>"
+movieSelectionElement.innerHTML += MovieActorsHTML;
+  var MovieRatedHTML = "<h3>";
+  MovieRatedHTML += "Rated: " + JSONData.Rated;
+  MovieRatedHTML += "</h3>";
+movieSelectionElement.innerHTML += MovieRatedHTML;
+  var MovieGenreHTML = "<h3>";
+  MovieGenreHTML += "Genre: " + JSONData.Genre;
+  MovieGenreHTML += "</h3>";
+movieSelectionElement.innerHTML += MovieGenreHTML;
+  var MovieYearHTML = "<h3>";
+  MovieYearHTML += "Year Created: " + JSONData.Year;
+  MovieYearHTML += "</h3>";
+movieSelectionElement.innerHTML += MovieYearHTML;
+  var MoviePlotHTML = "<h3>";
+  MoviePlotHTML += "Plot: " + JSONData.Plot;
+  MoviePlotHTML += "</h3>";
+movieSelectionElement.innerHTML += MoviePlotHTML;
+  var MovietotalSeasonsHTML = "<h4>";
+  MovietotalSeasonsHTML += "Total Seasons: " + JSONData.totalSeasons;
+  MovietotalSeasonsHTML += "</h4>";
+movieSelectionElement.innerHTML += MovietotalSeasonsHTML;
+// console.log(MovietotalSeasonsHTML); had to fix my spelling from TotalSeasons to TotalSeasons
   })
   xhr.send();
 })
