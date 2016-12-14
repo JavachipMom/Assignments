@@ -18,12 +18,16 @@ document.addEventListener("DOMContentLoaded", function(){
       var inputData = JSONData[i];
       var inputTypeHTML = `<label>${inputData.label}</label><input type="${inputData.type}" id="${inputData.id}" icon="${inputData.icon}">
       `;
-    // for (var i = 0; i < inputTypeHTML.length; i++) {
-    //   var selectData = inputTypeHTML[4];
-    //
-    // }
-      // concatenate inputHTML to placeholder HTML
+    // concatenate inputHTML to placeholder HTML
       formPlaceholder += inputTypeHTML;
+    // Find a way to loop through the data again to pull selector from the data
+    // create a placeholder for it
+    // reassign?? or concat with inputTypehtml?? Not too sure about this step
+    // Since we have the selector, we need options
+    // Create another loop to go through options of 'Language'
+    // Create a placeholder again?? Then inject into inputTypeHTML??
+
+
 
     }
     // So put my formPlaceholder into my formElement
