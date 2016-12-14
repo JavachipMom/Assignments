@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function(){
       var inputData = JSONData[i];
       var inputTypeHTML = `<label>${inputData.label}</label><input type="${inputData.type}" id="${inputData.id}" icon="${inputData.icon}">
       `;
+  console.log(inputData);
     // concatenate inputHTML to placeholder HTML
       formPlaceholder += inputTypeHTML;
     // Find a way to loop through the data again to pull selector from the data
