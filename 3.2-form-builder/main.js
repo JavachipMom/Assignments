@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function(){
     // reassign?? or concat with inputTypehtml?? Not too sure about this step
     // Since we have the selector, we need options
     // Create another loop to go through options of 'Language'
-    // Create a placeholder again?? Then inject into inputTypeHTML??
+    // Create a placeholder again?? Then inject into
 
 
 
