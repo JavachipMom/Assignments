@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+.add {
+  display: inline-block;
+  width: 10%;
+}
+
+.body {
+  height: 200px;
+  margin: 0 auto;
+  width: 650px;
+  background: #eee;
+  box-shadow:
+        0 1px 1px rgba(0,0,0,0.15),
+        0 10px 0 -5px #eee,
+        0 10px 1px -4px rgba(0,0,0,0.15),
+        0 20px 0 -10px #eee,
+        0 20px 1px -9px rgba(0,0,0,0.15);
+}
+
+.listTitle {
+  text-align: center;
+}
+
+.main {
+  background-color: rgb(245,245,245);
+}
+
+.userList {
+  display: inline-block;
+  height: 25%;
+  width: 85%;
+}
