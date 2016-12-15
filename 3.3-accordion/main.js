@@ -6,7 +6,9 @@ $(function(){
   $showElements.on("click", function(e){
 //Create a variable to reference the clicked show
   var $clickedShow = $(this);
+// Use event listener to
+  $showElements.filter(".expand").removeClass("expand");
 
   $clickedShow.addClass("expand");
-  })
+  });
 })

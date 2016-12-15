@@ -1,8 +1,13 @@
-.showInfo {
-  height: 100px;
+.listedShow {
+  height: 20px;
   overflow: hidden;
 }
 
 .expand {
-  height: 200px;
+  height: 100%;
+}
+
+.page__content {
+  background-image: url("images/Nick_jr.png");
+  background-blend-mode: overlay;
 }
