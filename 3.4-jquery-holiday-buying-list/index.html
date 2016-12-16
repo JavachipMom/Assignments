@@ -7,33 +7,45 @@
     <script src="main.js" charset="utf-8"></script>
     <link rel="stylesheet" href="main.css">
   </head>
-  <!-- [] Structure page for list
-       [] Style the different elements(more in-depth details once I know which
+  <!-- [x] Structure page for list
+       [x] Style the different elements(more in-depth details once I know which
             elements)
-       [] Link my JavaScript page with HTML
+       [x] Link my JavaScript page with HTML
        [] Pull my jQuery into my JavaScript
        [] Create my Event Listeners-->
-  <body class="body">
-    <main class="main">
+  <body class="body" data-js="body">
+    <main class="main"
+          data-js="main">
       <h1 class="listTitle"> GIFTS TO BUY </h1>
-      <form class="listForm"
-            action="index.html"
+      <form action="index.html"
+            class="listForm"
+            data-js="listFrom"
             method="post">
         <input class="userList"
+               data-js="userlist"
                type="text"
                name=""
-               value=""placeholder="Add items here">
-        <input class="add"
+               value=""
+               placeholder="Add items here">
+        <input class="addButton"
+               data-js="addButton"
                type="submit"
-               name=""
                value="ADD">
       </form>
-      <section>
-        <article class="">
-          Gift card to Santikos
+      <section data-js="items">
+        <article class="giftItem"
+                 data-js="giftItem">
+          <input class="circle"
+                 data-js="circle"
+                 type="checkbox"
+                 value="">
         </article>
-        <article class="">
-          IKEA Couch
+        <article class="giftItem"
+                 data-js="giftItem">
+          <input class="circle"
+                 data-js="circle"
+                 type="checkbox"
+                 value="">
         </article>
       </section>
     </main>

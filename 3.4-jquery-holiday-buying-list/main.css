@@ -2,22 +2,41 @@
   box-sizing: border-box;
 }
 
-.add {
+.addButton {
+  background-color: rgb(127,195,121);
+  color: rgb(255,255,255);
   display: inline-block;
-  width: 10%;
+  height: 100%;
+  -webkit-appearance: initial;
+  width: 14%;
 }
 
 .body {
-  height: 200px;
+  background-color: rgb(255,255,255);
+  border-color: rgb(0,0,0);
+  border-style: double;
+  height: 500px;
   margin: 0 auto;
-  width: 650px;
-  background: #eee;
-  box-shadow:
-        0 1px 1px rgba(0,0,0,0.15),
-        0 10px 0 -5px #eee,
-        0 10px 1px -4px rgba(0,0,0,0.15),
-        0 20px 0 -10px #eee,
-        0 20px 1px -9px rgba(0,0,0,0.15);
+  width: 750px;
+}
+
+.circle {
+  border-radius: 100px;
+  height: 20px;
+  width: 20px;
+}
+
+.giftcard {
+  display: inline-block;
+  height: 30px;
+  width: 100%;
+}
+
+.listForm {
+  display: inline-block;
+  height: 50px;
+  margin-bottom: 50px;
+  width: 100%;
 }
 
 .listTitle {
@@ -26,10 +45,24 @@
 
 .main {
   background-color: rgb(245,245,245);
+  background: #eee;
+  background-color: rgb(245,245,245);
+  box-shadow:
+        0 1px 1px rgba(0,0,0,0.15),
+        0 10px 0 -5px #eee,
+        0 10px 1px -4px rgba(0,0,0,0.15),
+        0 20px 0 -10px #eee,
+        0 20px 1px -9px rgba(0,0,0,0.15);
+  display: inline-block;
+  height: 70%;
+  margin-top: 60px;
+  width: 100%;
 }
 
 .userList {
   display: inline-block;
-  height: 25%;
+  font-size: 100%;
+  font-style: italic;
+  height: 100%;
   width: 85%;
 }
