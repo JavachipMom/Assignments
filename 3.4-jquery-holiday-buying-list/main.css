@@ -62,10 +62,10 @@
   margin-top: 60px;
   width: 100%;
 }
-
+/* So I tried to stylized my CSS for the "Total" and the placeholder for the price but it threw off my whole entire section*/
 .total {
   font-size: 24px;
-  
+
 }
 
 .totalAmount {
