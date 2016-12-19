@@ -42,7 +42,7 @@ var giftItemPrice = giftItemArray[1];
     .attr({
       class: "value",
       "data-js": "price"
-    }).text(giftItemPrice)
+    }).text("$" + giftItemPrice)
     ;
     // Need to take all variables and add to list
   $inputItemArticle
@@ -50,7 +50,7 @@ var giftItemPrice = giftItemArray[1];
     .append($itemName)
     .append($itemValue)
     ;
-
+// Added my list of items that need to get put to the top of the list
     $itemsElement.prepend($inputItemArticle)
   });
 })

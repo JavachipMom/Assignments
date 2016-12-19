@@ -63,6 +63,15 @@
   width: 100%;
 }
 
+.total {
+  font-size: 24px;
+  
+}
+
+.totalAmount {
+  display: inline-block;
+}
+
 .userGiftInput {
   display: inline-block;
   font-size: 100%;
