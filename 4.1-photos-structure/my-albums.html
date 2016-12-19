@@ -2,18 +2,58 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title> My Albums </title>
+    <title> A Web Page </title>
+    <link rel="stylesheet" href="main.css">
   </head>
-  <!-- [] create heading "My Album"
-       [] Album thumbs
-          [] image
-          [] image name
-       [] heading with dark grey background
-       [] heading with padding & centered
-       [] layout of 3/3 images
-       [] image ontop of name
-       [] get six images-->
   <body>
-
+    <header class="header">
+      <h1 class="headerName"> My Albums </h1>
+    </header>
+    <main class="albumsContainer">
+      <section class="firstRow">
+        <article class="album">
+          <img src="albert-wesker.jpg"
+               class="image"
+               alt="Album 1">
+          <p class="albumName"> Albert Wesker
+          </p>
+        </article>
+        <article class="album">
+          <img src="darker-than-black.png"
+               alt="Album 2">
+          <p class="albumName"> Anime
+          </p>
+        </article>
+        <article class="album">
+          <img src="Matrix.jpg"
+               alt="Album 3">
+          <p class="albumName"> The Matrix
+          </p>
+        </article>
+      </section>
+      <section class="secondRow">
+        <article class="album">
+          <img src="lego-guy.gif"
+               class="image"
+               alt="Album 4">
+          <p class="albumName"> Legos
+          </p>
+        </article>
+        <article class="album">
+          <img src="music-head.jpg"
+               class="image"
+               alt="Album 5">
+          <p class="albumName"> Music
+          </p>
+        </article>
+        <article class="album">
+          <img src="Coding.png"
+               class="image"
+               alt="Album 6">
+          <p class="albumName"> Coding
+          </p>
+        </article>
+    </section>
+  </main>
   </body>
 </html>
