@@ -10,14 +10,26 @@
 
 <!-- Checklist for 4.2 NPM -->
 - [x] Get settled in with coffee
-- [x] Make the Checklist
-- [x] Create HTML
-- [x] Link the script tag
-- [] Link the CSS
-- [] Install jQuery with NPM
-- [] Install webpack with NPM
-- [] Research how to configure
-- [] Install webpack CLI
-- [] Rename JS folder
-- [] Configure webpack
-- [] Hook webpack CLI into package json
+SETUP
+- [x] - make a checklist
+- [x] - install webpack --save-dev
+- [x] - install webpack -g
+- [x] - touch webpack.config.js
+- [x] - reference lectures configuration and copy into ours
+- [x] - webpack --watch
+
+STRUCTURE
+- [ ] - create index.html to combine previous assignment code
+- [ ] - link script src to dist/bundle.js in index.html
+- [ ] - put a console log in main js to ensure bundling
+- [ ] - combine modal/photo html and the album/collection html into index.html
+- [ ] - add a class to modal structure to display none inside of index
+- [ ] - google make a modal in html ***************
+
+Click on photo to see modal
+- [ ] - Require $
+- [ ] - Jquery dom ready
+- [ ] - Add data-js to html
+- [ ] - Create var referencing each data-js attribute
+- [ ] - Click event on photo elements variable
+- [ ] - Inside of click event open modal **********************
