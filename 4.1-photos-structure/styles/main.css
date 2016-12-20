@@ -78,5 +78,9 @@
 .mainHeader {
   display: inline-block;
   vertical-align: top;
-  
+
+}
+
+.modal {
+  display: none;
 }

@@ -2,65 +2,92 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
-    <script src="dist/bundle.js" charset="utf-8"></script>
+    <title> My Albums </title>
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
     <main class="albumsContainer">
-        <section class="firstRow">
-          <article class="album">
-            <img src="albert-wesker.jpg"
-                 class="image"
-                 alt="Album 1">
-            <p class="albumName"> Albert Wesker
-            </p>
-          </article>
-          <article class="album">
-            <img src="darker-than-black.png"
-                 alt="Album 2">
-            <p class="albumName"> Anime
-            </p>
-          </article>
-          <article class="album">
-            <img src="Matrix.jpg"
-                 class="image"
-                 alt="Album 3">
-            <p class="albumName"> The Matrix
-            </p>
-          </article>
-        </section>
-        <section class="secondRow">
-          <article class="album">
-            <img src="lego-guy.gif"
-                 class="image"
-                 alt="Album 4">
-            <p class="albumName"> Legos
-            </p>
-          </article>
-          <article class="album">
-            <img src="music-head.jpg"
-                 class="image"
-                 alt="Album 5">
-            <p class="albumName"> Music
-            </p>
-          </article>
-          <article class="album">
-            <img src="Coding.png"
-                 class="image"
-                 alt="Album 6">
-            <p class="albumName"> Coding
-            </p>
-          </article>
+      <h1 class="albumNumbers"> Album 2 </h1>
+      <section class="firstRow">
+        <article class="album">
+          <img src="styles/albert-wesker.jpg"
+               class="image"
+               alt="Albert Wesker">
+          <p class="albumName"> Resident Evil
+          </p>
+        </article>
+        <article class="album">
+          <img src="styles/darker-than-black.png"
+               alt="Album 2">
+          <p class="albumName"> Anime
+          </p>
+        </article>
+        <article class="album">
+          <img src="styles/Matrix.jpg"
+               alt="Album 3">
+          <p class="albumName"> The Matrix
+          </p>
+        </article>
       </section>
-    </main>
-    <main>
+      <section class="secondRow">
+        <article class="album">
+          <img src="styles/lego-guy.gif"
+               class="image"
+               alt="Album 4">
+          <p class="albumName"> Legos
+          </p>
+        </article>
+        <article class="album">
+          <img src="styles/music-head.jpg"
+               class="image"
+               alt="Album 5">
+          <p class="albumName"> Music
+          </p>
+        </article>
+        <article class="album">
+          <img src="styles/Coding.png"
+               class="image"
+               alt="Album 6">
+          <p class="albumName"> Coding
+          </p>
+        </article>
+    </section>
+  </main>
+    <aside class="albumButtons">
+      <ul class="buttonsList">
+        <button type="button"
+                class="albumButton"
+                name="Album 1"> Album 1
+        </button>
+        <button type="button"
+                class="albumButton"
+                name="Album 2"> Album 2
+        </button>
+        <button type="button"
+                class="albumButton"
+                name="Album 3"> Album 3
+        </button>
+        <button type="button"
+                class="albumButton"
+                name="Album 4"> Album 4
+        </button>
+        <button type="button"
+                class="albumButton"
+                name="Album 5"> Album 5
+        </button>
+        <button type="button"
+                class="albumButton"
+                name="Album 6"> Album 6
+        </button>
+      </ul>
+    </aside>
+    <article class="modal">
       <h1 class="mainHeader"> Photo 1 </h1>
       <button type="button"
               class="backButton"
               name="backButton"> Back to Album
       </button>
-      <img src="albert-wesker.jpg" alt="Albert Wesker">
-    </main>
+      <img src="styles/albert-wesker.jpg" alt="Albert Wesker">
+    </article>
   </body>
 </html>

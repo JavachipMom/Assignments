@@ -44,7 +44,7 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	console.log(something);
+	console.log("ensuring this is working");
 
 
 /***/ }
