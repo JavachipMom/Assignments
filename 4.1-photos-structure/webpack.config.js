@@ -4,4 +4,4 @@ module.exports = {
       path: "./dist",
       filename: "bundle.js"
   }
-}
+};

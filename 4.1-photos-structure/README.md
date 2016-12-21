@@ -23,7 +23,7 @@ STRUCTURE
 - [x] - link script src to dist/bundle.js in index.html
 - [x] - put a console log in main js to ensure bundling
 - [x] - combine modal/photo html and the album/collection html into index.html
-- [ ] - add a class to modal structure to display none inside of index
+- [x] - add a class to modal structure to display none inside of index
 - [ ] - google make a modal in html ***************
 
 Click on photo to see modal
