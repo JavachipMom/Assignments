@@ -9,4 +9,4 @@
 - [x] Create git ignore: touch .gitignore
 - [x] Go into atom and add: .DS_Store and node_modules
 - [x] Create second js file inside js directory
-- [ ] Commit
+- [x] Commit
