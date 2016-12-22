@@ -63,7 +63,15 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
  */
 
 function isVowel(char){
-  
+  //Create a variable to identify the vowels BOTH upper and lowercase
+  var vowels = ["A, E, I, O, U, a, e, i, o, u"];
+  // Create a loop to go through each vowel to determine if it is true or false
+  for (var i = 0; i < vowels.length; i++) {
+    if (char === vowels[i]) {
+      return true;
+    }
+  }
+  return false;
 }
 
 console.assert(isVowel(0) === false);
@@ -113,9 +121,7 @@ console.assert(rovarspraket(0) === "0")
  * string "books".
  */
 
-function reverse(str){
-  var array = str
-}
+function reverse(str){}
 
 console.assert(reverse("books") === "skoob")
 console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")

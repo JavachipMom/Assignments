@@ -4,6 +4,7 @@ var $ = require("jquery");
 $(function(){
   // Create my variable to pull my html body over to my js with jQuery
   var $body = $("main__body");
+  console.log($body);
   // Create variable to find form for calculator
   var $form = $body.find("[data-js='calculator']");
   // Create a variable for my clear button
