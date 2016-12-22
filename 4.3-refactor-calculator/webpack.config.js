@@ -1,5 +1,5 @@
 module.exports = {
-  entry: "./js/main.js",
+  entry: "./js/calculator.js",
   devtool: "source-map",
   output: {
       path: "./dist",

@@ -1,4 +1,4 @@
-var $ = require("/calculator")
+var $ = require("./calculator")
 // document.addEventListener("DOMContentLoaded", function(){
   var nameButtonClearElement = document.querySelector("[data-js='button__clear']");
   // var outputNumberElement = document.querySelector("[data-js='display__value']");
