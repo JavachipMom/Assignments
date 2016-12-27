@@ -61,14 +61,16 @@ function properSentences(string){
   var sentenceArray = string.split(". ");
   for(i = 0; i < sentenceArray.length; i++){
     // This one if statement is a little confusing with the -1, I don't understand it very much. Is this saying your taking away 1 index from the array??
+
     if(i !== sentenceArray.length - 1){
-      sentenceArray[i] = sentenceArray[i].charAt(0).toUpperCase() + sentenceArray[i].slice[0] + ". ";
+      sentenceArray[i] = sentenceArray[i].charAt(0).toUpperCase() + sentenceArray[i].slice(1) + ". ";
     } else {
-      sentenceArray[i] = sentenceArray[i].charAt(0).toUpperCase() + sentenceArray[i].slice[0];
+      sentenceArray[i] = sentenceArray[i].charAt(0).toUpperCase() + sentenceArray[i].slice(1);
     }
-    console.log(sentenceArray);
+
   }
   sentenceArray = sentenceArray.join("");
+
   return sentenceArray;
 }
 // Take our string and turn into array.
@@ -76,16 +78,38 @@ function properSentences(string){
 console.assert(properSentences(paragraph) === "It was a fine morning. The wine was good. Light slanted in through the cafe window.")
 
 // PART 4: write a function called iPutTheFunIn(). It should take a string as input. The output should be a copy of the original string with the word 'fun' inserted into the center of the string.
+// Created function iPutTheFunIn() and made my argument "string"
+function iPutTheFunIn(string){
+  // Create a variable for the first slice
+  var firstSlice = "";
+  // Create a variable for the second slice
+  var secondSlice = "";
+  // Create a variable for the new word
+  var newWord = "";
+  //
+  firstSlice = string.slice(0,string.length/2);
+  //
+  secondSlice = string.slice(string.length/2);
+  //
+  newWord = firstSlice + "fun" + secondSlice;
+  // return the "newWord" value
+  return newWord;
+}
 
 console.assert(iPutTheFunIn("funerary") === "funefunrary")
 console.assert(iPutTheFunIn("reds") === "refunds")
 
 // PART 5: write a function called pipeline(). it should take three inputs: (1) a starting value, (2) a function, and (3) another function. it should use functions (2) and (3) on the starting value, one after the other, and return a new value that has been processed by both function (2) and function (3).
 
+// Write the function pipeline()
+function pipeline(value, function1, function2){
+
+  return function2(function1(value));
+}
 // the following three tests all correspond to the pipeline() function.
 
 // test 1
-var paragraph = 'dad bring your crappy self in here. i want a dang sandwich.'
+var paragraph = 'mom bring your crappy self in here. i want a dang sandwich.'
 
 console.assert(pipeline(paragraph,nicer,properSentences) === "Mom bring your self in here. I want a sandwich.")
 
@@ -106,6 +130,7 @@ var exclaimAll = function(arr) {
     for (var i = 0; i < arr.length; i ++) {
         newArr.push(arr[i] + '!')
     }
+  return newArr;
 }
 
 var result = pipeline([10,20,30],squareDance,exclaimAll)
