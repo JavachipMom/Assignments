@@ -64,9 +64,10 @@ console.assert(isNaN(maxOfThree("aaa","bbb","ccc")));
 
 function isVowel(char){
   //Create a variable to identify the vowels BOTH upper and lowercase
-  var vowels = ["A, E, I, O, U, a, e, i, o, u"];
+  var vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"];
   // Create a loop to go through each vowel to determine if it is true or false
   for (var i = 0; i < vowels.length; i++) {
+    // Create a if statement that makes 'char' strictly equals the vowels
     if (char === vowels[i]) {
       return true;
     }
@@ -94,7 +95,9 @@ console.assert(isVowel("E") === true);
 // Only part I understand is to make this a function
 function rovarspraket(text){
   textAsString = text.toString();
-
+  if(textAsString === "0"){
+    return textAsString;
+  }
   var textArray = textAsString.split("");
   for(var i = 0; i < textArray.length; i++){
     var currentLetter = textArray[i];
@@ -104,6 +107,7 @@ function rovarspraket(text){
     }
   }
   return textArray.join("");
+
 }
 
 console.assert(rovarspraket("a") === "a")
@@ -121,7 +125,11 @@ console.assert(rovarspraket(0) === "0")
  * string "books".
  */
 
-function reverse(str){}
+function reverse(str){
+  // I need to split the string and give space in between to reverse the letters
+  // and join them back together
+  return str.split('').reverse().join('');
+}
 
 console.assert(reverse("books") === "skoob")
 console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew")
@@ -136,7 +144,22 @@ console.assert(reverse("we don't want no trouble") === "elbuort on tnaw t'nod ew
  */
 
 function findLongestWord(sentence){
-    // YOUR CODE HERE
+  // Created a variable for unpunctuatedString
+  var unpunctuatedString = "";
+  // Remove the punctuation from the string
+  unpunctuatedString = sentence.replace("'","");
+  // We need to split the string into an array
+  var stringSplit = unpunctuatedString.split(" ");
+  // Need to create a placeholder for longest words
+  var longestWord = "";
+
+    // We need a way to count each letter in the string of words
+    for (var i = 0; i < stringSplit.length; i++) {
+      if(stringSplit[i].length > longestWord.length){
+        longestWord = stringSplit[i];
+      }
+    }
+  return longestWord;
 }
 
 console.assert(findLongestWord("book dogs") === "book")
