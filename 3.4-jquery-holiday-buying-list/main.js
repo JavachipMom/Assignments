@@ -7,6 +7,7 @@ $(function(){
   var $userGiftInput = $body.find("[data-js='userGiftInput']");
   var $addButton = $body.find("[data-js='addButton']");
   var $itemsElement = $body.find("[data-js='items']");
+  var $totalPriceElement = $body.find("[data-js='priceAmount']");
 // Add event listener for click and prevent the default of refreshing
 $addButton.on("click", function(e){
   e.preventDefault();
@@ -51,6 +52,28 @@ var giftItemPrice = giftItemArray[1];
     .append($itemValue)
     ;
 // Added my list of items that need to get put to the top of the list
-    $itemsElement.prepend($inputItemArticle)
+  $itemsElement.prepend($inputItemArticle)
+
+    var totalPriceString = "";
+    var totalPrice = "";
+  $itemValue.each(function(itemValue){
+      var itemValue = $(".itemValue");
+      totalPriceString += itemValue.text();
+
+      var priceInput = totalPriceString;
+      var numbers = priceInput.split("$");
+      var numberString = numbers.join("+");
+      var totalOfEval = eval(numberString);
+      totalPrice = totalOfEval;
+    })
+    $totalPriceElement.text(totalPrice);
   });
+  // Now use the click to begin the strikethrough
+  $body.on("click", "[data-js='circle']", function(){
+    // create my variable to refenrence the function above
+    var $this = $(this);
+    // add on the class for strikethrough
+    $this.siblings().addClass("strikethrough");
+    $this.html("&#1003");
+  })
 })

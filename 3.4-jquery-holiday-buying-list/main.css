@@ -20,10 +20,8 @@
   width: 750px;
 }
 
-.circle {
-  border-radius: 100px;
-  height: 20px;
-  width: 20px;
+.checkbox {
+
 }
 
 .giftcard {
@@ -59,13 +57,18 @@
         0 20px 0 -10px #eee,
         0 20px 1px -9px rgba(0,0,0,0.15);
   display: inline-block;
-  margin-top: 60px;
+  margin-top: 30px;
   width: 100%;
 }
-/* So I tried to stylized my CSS for the "Total" and the placeholder for the price but it threw off my whole entire section*/
+
+.strikethrough {
+  color: rgb(252,98,93);
+  font-style: italic;
+  text-decoration: line-through;
+}
+
 .total {
   font-size: 24px;
-
 }
 
 .totalAmount {
@@ -79,6 +82,7 @@
   height: 100%;
   width: 85%;
 }
+
 
 .value {
   display: inline-block;
