@@ -72,8 +72,15 @@ var giftItemPrice = giftItemArray[1];
   $body.on("click", "[data-js='circle']", function(){
     // create my variable to refenrence the function above
     var $this = $(this);
-    // add on the class for strikethrough
+    // add on the class for strikethrough to all siblings elements
     $this.siblings().addClass("strikethrough");
-    $this.html("&#1003");
-  })
+  });
+  $body.on("dblclick", "[data-js='giftItem']", function(){
+    var $this = $(this);
+    $this.get(0).contentEditable = "true";
+  });
+  $body.on("dblclick", "[data-js='itemValue']", function(){
+    var $this = $(this);
+    $this.get(0).contentEditable = "true";
+  });
 })

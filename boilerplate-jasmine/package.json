@@ -1,0 +1,17 @@
+{
+  "name": "boilerplate-jasmine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "jsdom": "^9.9.1",
+    "webpack": "^1.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
