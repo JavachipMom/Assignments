@@ -4,13 +4,13 @@ describe("test", function(){
   var jsdom = require("jsdom");
 
   // Create our beforeEach to before each it blocks
-  beforeEach(function(){
 
-    document = jsdom.jsdom(`<body>
-      
-      </body>`)
+  describe("Hello world", function() {
+    beforeEach(function(){
+      test = require("../js/test.js");
+    });
+    it("says hello", function() {
+      expect(test.helloWorld()).toEqual("Hello world!");
+    });
   });
-  test = require("../js/test.js");
 });
-
-// Create test to fail
