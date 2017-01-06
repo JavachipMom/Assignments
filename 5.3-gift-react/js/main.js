@@ -13,6 +13,8 @@ export default React.createClass({
       outputGiftItem: ""
     })
   },
+
+
   render() {
     return (
       <main className="main">
