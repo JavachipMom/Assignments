@@ -1,6 +1,18 @@
 import React from 'react'
 
 export default React.createClass({
+  getInitialState() {
+    return {
+      outputGiftItem: ""
+    }
+  },
+  onAddButtonClick(e) {
+    // This preventDefault will keep it from refreshing the page everytime you click on the Add Button
+    e.preventDefault();
+    this.setState({
+      outputGiftItem: ""
+    })
+  },
 
 
   render() {
@@ -32,7 +44,7 @@ export default React.createClass({
             <p className="value"> $49.99
             </p>
           </article>
-          <article className="giftItem">
+          <article className="giftItem" ref="outputGiftItem"> { this.state.outputGiftItem }
             <input className="circle"
                    type="checkbox"
                    value=""/>
