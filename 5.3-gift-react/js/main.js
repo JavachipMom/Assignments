@@ -6,17 +6,20 @@ export default React.createClass({
       outputGiftItem: ""
     }
   },
+  // Append all strings to list ref
   onAddButtonClick(e) {
     // This preventDefault will keep it from refreshing the page everytime you click on the Add Button
     e.preventDefault();
-    this.setState({
-      outputGiftItem: ""
-    })
+
+    console.log(this);
   },
 
 
   render() {
     return (
+      // Create html string of checkbox
+      // Create html string of item name
+      // Create html tring for price
       <main className="main">
         <h1 className="listTitle"> GIFTS TO BUY
         </h1>
@@ -35,7 +38,8 @@ export default React.createClass({
                  onClick={ this.onAddButtonClick }/>
         </form>
         <section>
-          <article className="giftItem">
+          <article className="giftItem"
+                   ref="outputGiftItem">
             <input className="strikethrough"
                    type="checkbox"
                    value=""/>
@@ -44,7 +48,7 @@ export default React.createClass({
             <p className="value"> $49.99
             </p>
           </article>
-          <article className="giftItem" ref="outputGiftItem"> { this.state.outputGiftItem }
+          <article className="giftItem">
             <input className="circle"
                    type="checkbox"
                    value=""/>
