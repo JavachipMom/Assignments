@@ -1,5 +1,5 @@
 {
-  "name": "boilerplate-jasmine",
+  "name": "5.4-facebook",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
@@ -20,7 +20,7 @@
     "webpack": "^1.14.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC"

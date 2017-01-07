@@ -1,8 +1,8 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Main from './Main'
+import Facebook from './Facebook'
 
 render(
-  ( <Main /> ),
+  ( <Facebook /> ),
   document.getElementById('app')
 )
