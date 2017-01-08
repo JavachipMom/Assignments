@@ -23,5 +23,8 @@ describe("Facebooking", () => {
   beforeEach(() => {
     facebookComponent = TestUtils.renderIntoDocument(<Facebook />)
   })
+
+  it("Should have a newsfeed article", () => {
   
+  })
 })
