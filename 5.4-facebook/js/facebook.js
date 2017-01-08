@@ -1,16 +1,22 @@
 import React from 'react'
 
 export default React.createClass({
+getInitialState() {
 
+}
   render() {
     return (
-      <main>
-        <section>
-          <div>
-            <img src="../styles/icon.jpg" alt="page icon"></img>
-          </div>
+
+        <section className="articleContainer">
+          <header>
+            <img className="profilePic"
+                 src="../styles/icon.jpg">
+            </img>
+            <h3 className="username"> Instant Articles
+            </h3>
+
+          </header>
         </section>
-      </main>
     )
   }
 })

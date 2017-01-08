@@ -1,6 +1,8 @@
 import React from 'react'
+
 import { render } from 'react-dom'
-import Facebook from './Facebook'
+
+import Facebook from './facebook'
 
 render(
   ( <Facebook /> ),
