@@ -1,0 +1,21 @@
+.articleBlock {
+  display: inline-block;
+  height: 100%;
+  margin: 0 15%;
+  width: 60%;
+  vertical-align: top
+}
+
+.articleContainer {
+  background-color: rgb(255,255,255)
+}
+
+.articleSection {
+  background-color: rgb(233,235,238);
+  border-color: rgb(222,223,227)
+}
+
+.profilePic {
+  height: 70px;
+  width: 70px;
+}
