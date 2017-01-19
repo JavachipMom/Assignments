@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function(){
         inputData.options.forEach(function(optionData){
           // create a placeholder for it
           formPlaceholder += `<option label="${optionData.label}" value="${optionData.value}"</options>;`
+          console.log(optionData.value);
         })
       }else if(inputData.type === "text area"){
         formPlaceholder += `<textarea class="textArea" placeholder="  ${inputData.label}" type="${inputData.type}"
@@ -44,6 +45,6 @@ document.addEventListener("DOMContentLoaded", function(){
     }
     // So put my formPlaceholder into my formElement
     formElement.innerHTML += formPlaceholder;
-  })
+  });
   xhr.send();
-})
+});
