@@ -1,8 +1,10 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Main from './Main'
+import Main from './main'
 
 render(
-  ( <Main /> ),
+  (
+    <Main/>
+  ),
   document.getElementById('app')
 )
