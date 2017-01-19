@@ -2,47 +2,48 @@ import React from 'react'
 import { Link } from 'react-router'
 
 export default React.createClass({
-  getInitialState(){
+  getDefaultProps (){
     return {
       contacts: [
-        0:{
+        {
           name: "Mary Poppins",
           email: "umbrella_lover@movie.com",
-          phone: "208093843",
+          phone: "1(310)555-5501",
           location: "Los Angeles, CA"
     },
-        1:{
+        {
           name: "Neo Smith",
           email: "lifehacker@matrix.com",
-          phone: "208093843",
+          phone: "1(210)555-5502",
           location: "Machine City, TX"
     },
-        2:{
+        {
           name: "Richard Hendriks",
           email: "im_a_genius@siliconvalley.com",
-          phone: "208093843",
-          location: "Silicon Valley, CA"
+          phone: "1(415)555-5503",
+          location: "San Francisco, CA"
         }
       ]
     }
-},
+  },
 
-  render() {
+  render (){
     return (
-      <section>
-        <h2> Contacts </h2>
+      <div>
+        <h2>Contact List</h2>
         {
           this.props.contacts.map(
-            (contact, i)=>{
+            function(contact, i){
               return (
-                <Link to={`${contacts.name}/${contacts.email}/${contacts.phone}/${contacts.location}`}key={i}>
-                  {contacts.name}
+                <Link to={`${contact.name}/${contact.email}/${contact.phone}/${contact.location}`}key={i}>
+                  {contact.name}
                 </Link>
               )
             }
           )
         }
-      </section>
+      </div>
     )
   }
+
 })
