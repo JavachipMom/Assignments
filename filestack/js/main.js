@@ -1,69 +1,56 @@
 import React from 'react'
+import Validator from 'validator'
 
 export default React.createClass({
-  getInitialState() {
+
+  getInitialState(){
     return {
-      outputGiftItem: [
-        {
-          text: ""
-        }
-      ]
+      isCreditCardValid: false,
+      validityOutput: "",
+      currentCardInput: "",
     }
   },
-  // Create html string of checkbox
-  // Create html string of item name
-  // Create html tring for price
-  // Append all strings to list ref
-  onAddButtonClick(e) {
-    // This preventDefault will keep it from refreshing the page everytime you click on the Add Button
-    e.preventDefault();
-    var inputGiftItem = this.refs.inputGiftItem.value
-
-    var currentGiftItem = this.state.outputGiftItem
-    currentGiftItem.push({ text: inputGiftItem })
-    this.setState({
-      outputGiftItem: currentGiftItem
-    })
+  onCreditCardChange (e){
+    var newCardInput = e.target.value
+    this.setState({currentCardInput:newCardInput})
   },
-  render() {
+  isThisCardValid(e){
+    e.preventDefault();
+    var validCard = Validator.isCreditCard(this.state.currentCardInput)
+    this.setState({isCreditCardValid:validCard})
+
+    if (validCard === false) {
+      return this.setState({validityOutput:"Try Again!"})
+    } else {
+      return this.setState({validityOutput:"Good To Go!"})
+    }
+  },
+  render (){
     return (
-      <main className="main">
-        <h1 className="listTitle"> GIFTS TO BUY
-        </h1>
-        <input type="filepicker"
-               data-fp-apikey="AClnIh8epRAaIvhukgJ3Uz"
-               onchange="alert(event.fpfile.url)">
-        <form action="index.html"
-              className="listForm"
-              method="post">
-          <input className="userGiftInput"
-                 type="text"
-                 placeholder="Type the gift to buy HERE, and price HERE"
-                 ref="inputGiftItem"/>
-          <input className="addButton"
-                 ref="inputAddItem"
-                 type="submit"
-                 onClick= { this.onAddButtonClick }/>
-        </form>
-        <section>
-          <ol className="giftItem"
-                   ref="outputGiftItem">
-            <input className="strikethrough"
-                   type="checkbox"
-                   value=""/>
-            <p className="itemName"> Blaze Monster Truck
-            </p>
-            <p className="value"> $49.99
-            </p>
-          </ol>
-          <article className="totalAmount">
-            <p className="total"> Total
-            </p>
-            <p className="priceAmount"> 0
-            </p>
-          </article>
-        </section>
-      </main>
+      <div className="cardValidator">
+      <form className="creditCardSim">
+        <h3
+          className="fakeCardName">Enter Card Number Here
+        </h3>
+        <input
+          className="cardInput"
+          type="text"
+          pattern="[0-9.-]{19}"
+          maxLength="19"
+          onChange={this.onCreditCardChange}
+          placeholder="xxxx-xxxx-xxxx-xxxx"/>
+      </form>
+      <input
+        className="submitButton"
+        type="submit"
+        onClick={this.isThisCardValid}/>
+      <h3
+        className="validationPrompt"> Is this card valid?
+      </h3>
+      <h2
+        className={this.state.isCreditCardValid ? "valid" : "invalid"}>{this.state.validityOutput}
+      </h2>
+      </div>
     )
   }
 })
