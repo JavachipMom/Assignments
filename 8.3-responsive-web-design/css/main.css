@@ -94,6 +94,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.article__container {
+  padding: 0 10%;
+}
+
 .blackBlock {
   background-color: rgb(15,15,15);
   text-align: center;
@@ -104,7 +108,31 @@ textarea {
   text-align: center;
 }
 
+.button {
+  background-color: rgb(255,255,255);
+  border-radius: 20px;
+  border-width: thin;
+  margin: 10% 30%;
+  font-weight: bold;
+}
+
+.button__container {
+  display: inline-block;
+  height: 60px;
+  width: 100%;
+}
+
 .container {
+  display: inline-block;
+}
+
+.details {
+  display: inline-block;
+  height: 25%;
+  width: 49%;
+}
+
+.detailsContainer {
   display: inline-block;
 }
 
@@ -121,6 +149,15 @@ textarea {
   text-align: center;
 }
 
+.header__box {
+  display: inline-block;
+  width: 100%;
+}
+
+html {
+  font-family: sans-serif;
+}
+
 .link {
   color: rgb(222,222,222);
 }
@@ -129,9 +166,26 @@ textarea {
   color: rgb(99,113,118);
 }
 
+.logo {
+  display: inline-block;
+}
+
+.navi {
+  display: inline-block;
+}
+
 .priceAmount {
+  color: rgb(255,255,255);
   font-size: 50px;
   margin: 0;
+}
+
+.priceLevels {
+  color: rgb(255,255,255);
+}
+
+.priceLevels__bottom {
+  color: rgb(161,174,201);
 }
 
 .statement-pricing {
@@ -140,6 +194,7 @@ textarea {
 
 .statement-text {
   color: rgb(255,255,255);
+  text-align: center;
 }
 
 
@@ -240,6 +295,8 @@ textarea {
     /* Style adjustments for viewports that meet the condition */
 
 }
+
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),

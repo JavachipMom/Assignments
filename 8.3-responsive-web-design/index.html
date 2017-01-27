@@ -21,9 +21,9 @@
 
         <!-- Add your site or application content here -->
         <header>
-          <div class="">
-            <h3>YOUR LOGO</h3>
-            <nav>
+          <div class="header__box">
+            <h3 class="logo">YOUR LOGO</h3>
+            <nav class="navi">
               <a href="#">Home</a>
               <a href="#">Pricing</a>
               <a href="#">Contact</a>
@@ -31,85 +31,103 @@
           </div>
         </header>
         <div class="statement-pricing">
-          <h2 class="statement-text">Simple Pricing.</h2>
-          <h2 class="statement-text">Try before you buy.</h2>
+          <h2 class="statement-text">Simple Pricing.
+          </h2>
+          <h2 class="statement-text">Try before you buy.
+          </h2>
         </div>
-        <article class="container">
-          <div class="greenBlock">
-            <h3>PERSONAL</h3>
-            <h2 class="priceAmount">$5</h2>
-            <h3>PER MONTH</h3>
-          </div>
-          <ul>
-            <li class="listedItems">Free setup</li>
-            <li class="listedItems">Custom sub-domain</li>
-            <li class="listedItems">Standard customer support</li>
-            <li class="listedItems">1GB file storage</li>
-            <li class="listedItems">1 database</li>
-            <li class="listedItems">Unlimited bandwidth</li>
-          </ul>
-          <div class="">
-            <button type="button" name="Choose">Choose</button>
-          </div>
-        </article>
-        <article class="container">
-          <div class="blueBlock">
-            <h3>SMALL BUSINESS</h3>
-            <h2 class="priceAmount">$25</h2>
-            <h3>PER MONTH</h3>
-          </div>
-          <ul>
-            <li class="listedItems">Free setup</li>
-            <li class="listedItems">Use your own domain</li>
-            <li class="listedItems">Standard customer support</li>
-            <li class="listedItems">10GB file storage</li>
-            <li class="listedItems">5 database</li>
-            <li class="listedItems">Unlimited bandwidth</li>
-          </ul>
-          <div class="">
-            <button type="button" name="Choose">Choose</button>
-          </div>
-        </article>
-        <article class="container">
-          <div class="blackBlock">
-            <h3>ENTERPRISE</h3>
-            <h2 class="priceAmount">$45</h2>
-            <h3>PER MONTH</h3>
-          </div>
-          <ul>
-            <li class="listedItems">Free setup</li>
-            <li class="listedItems">Use your own domain</li>
-            <li class="listedItems">Premium customer support</li>
-            <li class="listedItems">Unlimited file storage</li>
-            <li class="listedItems">25 database</li>
-            <li class="listedItems">Unlimited bandwidth</li>
-          </ul>
-          <div class="">
-            <button type="button" name="Choose">Choose</button>
-          </div>
-        </article>
-        <div class="">
-          <h2>GET STARTED TODAY</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="article__container">
+          <article class="container">
+            <div class="greenBlock">
+              <h3 class="priceLevels">PERSONAL</h3>
+              <h2 class="priceAmount">$5</h2>
+              <h3 class="priceLevels__bottom">PER MONTH</h3>
+            </div>
+            <ul class="level__details"
+                style="list-style: none">
+              <li class="listedItems">Free setup</li>
+              <li class="listedItems">Custom sub-domain</li>
+              <li class="listedItems">Standard customer support</li>
+              <li class="listedItems">1GB file storage</li>
+              <li class="listedItems">1 database</li>
+              <li class="listedItems">Unlimited bandwidth</li>
+            </ul>
+            <div class="button__container">
+              <button class="button"
+                      name="Choose"
+                      type="button">Choose
+              </button>
+            </div>
+          </article>
+          <article class="container">
+            <div class="blueBlock">
+              <h3 class="priceLevels">SMALL BUSINESS</h3>
+              <h2 class="priceAmount">$25</h2>
+              <h3 class="priceLevels__bottom">PER MONTH</h3>
+            </div>
+            <ul class="level__details"
+                style="list-style: none">
+              <li class="listedItems">Free setup</li>
+              <li class="listedItems">Use your own domain</li>
+              <li class="listedItems">Standard customer support</li>
+              <li class="listedItems">10GB file storage</li>
+              <li class="listedItems">5 database</li>
+              <li class="listedItems">Unlimited bandwidth</li>
+            </ul>
+            <div class="button__container">
+              <button class="button"
+                      name="Choose"
+                      type="button">Choose
+              </button>
+            </div>
+          </article>
+          <article class="container">
+            <div class="blackBlock">
+              <h3 class="priceLevels">ENTERPRISE</h3>
+              <h2 class="priceAmount">$45</h2>
+              <h3 class="priceLevels__bottom">PER MONTH</h3>
+            </div>
+            <ul class="level__details"
+                style="list-style: none">
+              <li class="listedItems">Free setup</li>
+              <li class="listedItems">Use your own domain</li>
+              <li class="listedItems">Premium customer support</li>
+              <li class="listedItems">Unlimited file storage</li>
+              <li class="listedItems">25 database</li>
+              <li class="listedItems">Unlimited bandwidth</li>
+            </ul>
+            <div class="button__container">
+              <button class="button"
+                      name="Choose"
+                      type="button">Choose
+              </button>
+            </div>
+          </article>
         </div>
-        <div class="">
-          <h2>PAY MONTHLY OR ANNUALLY</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="">
-          <h2>24/7 CUSTOMER SUPPORT</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-        <div class="">
-          <h2>CANCEL YOUR PLAN ANYTIME</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="details__container">
+          <div class="details">
+            <h2>GET STARTED TODAY</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="details">
+            <h2>PAY MONTHLY OR ANNUALLY</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="details">
+            <h2>24/7 CUSTOMER SUPPORT</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="details">
+            <h2>CANCEL YOUR PLAN ANYTIME</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
         </div>
         <footer class="footer">
           <p class="footer__text">
             <a class="link"
-               href="#">Try now 
+               href="#">Try now
             </a>
-             for 14 days. No credit card required. Header image courtesy of
+              for 14 days. No credit card required. Header image courtesy of
             <a class="link"
                href="#">Unsplash
             </a>
