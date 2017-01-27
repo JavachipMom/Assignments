@@ -25,11 +25,12 @@ document.addEventListener("DOMContentLoaded", function(){
       formPlaceholder += inputTypeHTML;
       // Create if statment to pull the selected data options
       if (inputData.type === "select"){
+        // create the placehole for the selector for languages
+        formPlaceholder += `<select class="selector">`;
       // Find a way to loop through the data again to pull selector from the data
         inputData.options.forEach(function(optionData){
           // create a placeholder for it
           formPlaceholder += `<option label="${optionData.label}" value="${optionData.value}"</options>;`
-          console.log(optionData.value);
         })
       }else if(inputData.type === "text area"){
         formPlaceholder += `<textarea class="textArea" placeholder="  ${inputData.label}" type="${inputData.type}"
