@@ -95,16 +95,21 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .article__container {
+  display: inline-block;
+  height: 36em;
+  margin: 0 5%;
   padding: 0 10%;
 }
 
 .blackBlock {
   background-color: rgb(15,15,15);
+  height: 36%;
   text-align: center;
 }
 
 .blueBlock {
   background-color: rgb(52,84,142);
+  height: 36%;
   text-align: center;
 }
 
@@ -124,6 +129,7 @@ textarea {
 
 .container {
   display: inline-block;
+  height: 100%;
 }
 
 .details {
@@ -132,8 +138,9 @@ textarea {
   width: 49%;
 }
 
-.detailsContainer {
+.details__container {
   display: inline-block;
+  margin: 0 5%;
 }
 
 .footer {
@@ -146,6 +153,7 @@ textarea {
 
 .greenBlock {
   background-color: rgb(93,156,94);
+  height: 36%;
   text-align: center;
 }
 
